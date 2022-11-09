@@ -1,25 +1,59 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import FormikForm from './form';
+import Display from './display';
 import './App.css';
+import TestForm from './testForm';
+import Slider from './Slider/slider';
+import ImgSlider from './imgslider/ImgSlider';
 
 function App() {
+
+  const [Data, setData] = useState([]);
+  const [Image, setImage] = useState([]);
+  const [Discription, setDiscription] = useState("");
+  const [ProductName, setProductName] = useState("");
+  const [PkgDate, setPkgDate] = useState("01/01/2020");
+  const [Price, setPrice] = useState(0);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <section>
+
+      <div id='divide'>
+
+        {/* <div id='form'>
+
+        <FormikForm/>
+
+        </div>
+
+        <div id='display'>
+          
+        <Display
+          Image = {Image}
+          setImage = {setImage}
+          Discription = {Discription}
+          setDiscription = {setDiscription}
+          ProductName = {ProductName}
+          setProductName = {setProductName}
+          PkgDate = {PkgDate}
+          setPkgDate = {setPkgDate}
+          Price = {Price}
+          setPrice = {setPrice}
+        />
+
+        </div> */}
+
+        <TestForm />
+
+        <Slider />
+
+        <ImgSlider />
+
+      </div>
+      
+    </section>
+  )
 }
 
 export default App;

@@ -1,0 +1,21 @@
+.slideDiv{
+    /* position: absolute; */
+    /* top: 20%; */
+    /* left: 50%; */
+    height: 50vh;
+    width: 50vw;
+    /* transform: translate(-50%, 0); */
+    border: 1px solid black;
+    background-color: red;
+    margin:  20px auto;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 40px;
+    width: 220px;
+    margin: 20px auto;
+}
